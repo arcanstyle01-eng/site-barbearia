@@ -1,0 +1,82 @@
+/* ==========================================================================
+   TOKENS DE DESIGN — BLADE & CO. BARBEARIA
+   Extraídos e expandidos a partir da direção de arte da Hero de referência:
+   Negro Obsidian, Ardósia Fosca, Latão Champagne e Tipografia Condensada.
+   ========================================================================== */
+
+:root {
+  /* Paleta cromática principal */
+  --bg-obsidian: #090909;
+  --bg-surface: #10100f;
+  --bg-slate: #171614;
+  --bg-slate-hover: #1e1d1a;
+  --bg-header-scrolled: rgba(9, 9, 9, 0.92);
+
+  /* Acento metálico (Champagne / Latão Envelhecido da referência) */
+  --accent-brass: #c9ad82;
+  --accent-brass-bright: #d9c099;
+  --accent-brass-dim: rgba(201, 173, 130, 0.16);
+  --accent-brass-border: rgba(201, 173, 130, 0.42);
+  --accent-amber-warm: #a86b32;
+
+  /* Texto com contraste WCAG AA/AAA verificado sobre fundos escuros */
+  --text-primary: #f5f3ee;     /* ~18.1:1 em #090909 */
+  --text-secondary: #b6b0a5;   /* ~9.1:1 em #090909 / ~7.9:1 em #171614 */
+  --text-muted: #989185;       /* ~6.4:1 em #090909 / ~5.5:1 em #171614 */
+  --text-on-accent: #090909;   /* ~9.2:1 em #c9ad82 */
+
+  /* Linhas estruturais (hairline) */
+  --border-subtle: rgba(245, 243, 238, 0.12);
+  --border-strong: rgba(245, 243, 238, 0.24);
+  --border-focus: #d9c099;
+
+  /* Estados semânticos acessíveis */
+  --state-success-bg: rgba(133, 186, 138, 0.12);
+  --state-success-text: #a5d6aa;
+  --state-error-bg: rgba(224, 108, 108, 0.14);
+  --state-error-text: #f3a6a6;
+
+  /* Tipografia */
+  --font-display: 'Oswald', 'Arial Narrow', sans-serif;
+  --font-editorial: 'Cormorant Garamond', Georgia, serif;
+  --font-body: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-mono: 'IBM Plex Mono', ui-monospace, SFMono-Regular, monospace;
+
+  /* Escala tipográfica fluida */
+  --text-xs: 0.75rem;          /* 12px - piso mínimo legível */
+  --text-sm: 0.875rem;         /* 14px */
+  --text-base: 1rem;           /* 16px */
+  --text-md: 1.0625rem;        /* 17px */
+  --text-lg: 1.25rem;          /* 20px */
+  --text-xl: clamp(1.5rem, 2.2vw, 2rem);
+  --text-2xl: clamp(2.125rem, 3.8vw, 3.25rem);
+  --text-hero: clamp(3rem, 5.4vw, 5.15rem);
+
+  /* Espaçamento e ritmo */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-7: 3rem;
+  --space-8: 4.5rem;
+  --space-9: clamp(4.5rem, 8vw, 7.5rem);
+
+  /* Dimensões e geometria arquitetônica (bordas retas fiéis à referência) */
+  --container-max: 1280px;
+  --container-pad: clamp(1.25rem, 4vw, 3rem);
+  --header-height: 76px;
+  --radius-sharp: 0px;
+  --radius-micro: 2px;
+
+  /* Movimento discreto e preciso */
+  --ease-editorial: cubic-bezier(0.22, 1, 0.36, 1);
+  --duration-fast: 180ms;
+  --duration-base: 320ms;
+  --duration-slow: 560ms;
+
+  /* Sombras com matiz de fundo */
+  --shadow-elevated: 0 24px 56px -20px rgba(0, 0, 0, 0.78);
+  --shadow-floating: 0 14px 34px -10px rgba(0, 0, 0, 0.72);
+}

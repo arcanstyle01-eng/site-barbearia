@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://arcanstyle01-eng.github.io/site-barbearia/sitemap.xml
